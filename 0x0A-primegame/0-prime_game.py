@@ -49,7 +49,6 @@ def isRoundWinner(n, x):
                 del list[val - idx]
     return None
 
-
 def isPrime(n):
     # 0, 1, even numbers greater than 2 are NOT PRIME
     if n == 1 or n == 0 or (n % 2 == 0 and n > 2):
