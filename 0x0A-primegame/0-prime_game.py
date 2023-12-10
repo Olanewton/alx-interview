@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Prime Game'''
 
+
 def isWinner(x, nums):
     '''finds the winner'''
     winnerCounter = {'Maria': 0, 'Ben': 0}
@@ -17,6 +18,7 @@ def isWinner(x, nums):
     else:
         return None
 
+
 def isRoundWinner(n, x):
     '''find round winner'''
     list = [i for i in range(1, n + 1)]
@@ -29,7 +31,7 @@ def isRoundWinner(n, x):
         prime = -1
         for idx, num in enumerate(list):
             # if already picked prime num then
-            # find if num is multiple of the prime num
+            # find if num is multipl of the prime num
             if prime != -1:
                 if num % prime == 0:
                     selectedIdxs.append(idx)
@@ -48,6 +50,7 @@ def isRoundWinner(n, x):
             for idx, val in enumerate(selectedIdxs):
                 del list[val - idx]
     return None
+
 
 def isPrime(n):
     # 0, 1, even numbers greater than 2 are NOT PRIME
